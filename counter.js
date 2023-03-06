@@ -1,15 +1,8 @@
-let counter = 0;
+<script type='text/javascript'>    document.ondragstart = function () { return false; }; </script>
+<base target='_blank'/>
 
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector("button").onclick = count;
-});
-
-function count() {
-  counter++;
-
-  if (counter % 10 === 0) {
-    alert("Mouse would like to thank you for the food 🥙");
-  }
-
-  document.querySelector(".counter").innerHTML = counter;
-}
+<link href='http://media.tumblr.com/tumblr_m7efdhWLFX1qdlkyg.gif' rel='icon' type='image/x-icon'/>
+<title>Kawaii World ★</title>
+<link href='http://fonts.googleapis.com/css?family=Noticia+Text:700' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Glass+Antiqua' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Short+Stack' rel='stylesheet' type='text/css'/>
