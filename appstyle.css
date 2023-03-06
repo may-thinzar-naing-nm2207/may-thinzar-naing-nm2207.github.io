@@ -1,67 +1,345 @@
-html, body {
-  height:100%;
-  width:100%;
-  background-color: rgb(255,230,230);
+
+</head>
+<style type="text/css">
+#navbar-iframe {
+display: none;
+}
+body {
+background: url(http://i.imgur.com/ev8VyQW.png);
+background-attachment: fixed;
+font-family:Short Stack;
+font-size:11px;color:#555555;
+cursor: url(http://media.tumblr.com/tumblr_lpyq1tfKzG1qcn2vb.gif), auto;
+}
+a{
+text-decoration:none ;
+color:#222222 ;padding:2px; cursor: url(http://media.tumblr.com/tumblr_lpyq1tfKzG1qcn2vb.gif), progress;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out; }
+a:hover{
+color:#ffffff ;
+background:#D3D8FF;
+}
+b {
+font-family:verdana;padding:3px;
+font-weight: bold;color:#444444;background:#F2F9FF;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+b:hover{
+background:#CBE5FF;text-shadow:1px 1px 2px #111;
+border-radius:5px;color:#ffffff;
+}
+blockquote{
+padding:10px;
+background-image:url(http://i.imgur.com/DKomg.png);
+border-left: 10px solid #FFEDEF;
+border-right: 10px solid #FFEDEF;
+border-top: 2px solid #EFE6FF;
+border-bottom: 2px solid #EFE6FF;
+color:#555555;
+border-radius: 10px;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+
+blockquote:hover {
+background:url(http://i.imgur.com/tDtge.png);
+border-right: 10px solid #EFE6FF;
+border-left: 10px solid #EFE6FF;
+border-top: 2px solid #FFEDEF;
+border-bottom: 2px solid #FFEDEF;
+border-radius:30px;
+-webkit-box-shadow: 0px 0px 8px 3px #FFFAD8;
+-moz-box-shadow:    0px 0px 8px 3px #FFFAD8;
+box-shadow:         0px 0px 8px 3px #FFFAD8;
 }
 
-/* Sections of Layout
--------------------------------------- */
-/* Generic styles for demo purposes
--------------------------------------- */
-.container {
-  font-family: Georgia, serif;
-  height:98%;
-  width:98%;
+i {
+padding-bottom:18px;
+color: #808080;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+i:hover{
+color:transparent;padding-bottom:0px;
+text-shadow:0px 10px 0px #333333;
+}
+u {
+color: #808080;
+padding-bottom:2px;
+border-bottom: 2px #D6EBFF solid;
+text-decoration: none;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+u:hover {
+color: #000000;
+border-bottom: 10px transparent solid;
+}
+::-webkit-scrollbar {
+width: 7px;
+height: auto;
+}
+::-webkit-scrollbar-track-piece {
+background:#ffffff;
+}
+::-webkit-scrollbar-thumb:vertical, ::-webkit-scrollbar-thumb:horizontal {
+background:#E6E7FF;border-radius:20px;
+}
+img {
+border:2px solid #eeeeee;
+Opacity:1;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+img:hover{
+Opacity:0.6
+}
+.h1 {
+background-image: url(http://media.tumblr.com/tumblr_lfhu3fRcmR1qzvcyt.gif);
+background-repeat:no-repeat;
+background-position:97% 100%;
+padding:5px;
+font:20px 'Glass Antiqua';
+text-align:center;
+letter-spacing: 2px;
+margin:10px;margin-bottom:0px;
+border-bottom: 5px solid #FBF2E4;
+border-radius:25px;
+background-color:#FBF9FF;
+}
+.h2 {
+text-align: center;
+background:#FFF7F8;
+padding:4px;border-bottom: 3px solid #FFEEF0;border-top:none;
+margin-bottom:5px;
+font:10px;width:350px;
+color:#666;
+webkit-border-bottom-right-radius: 35px;
+-webkit-border-bottom-left-radius: 35px;
+-moz-border-radius-bottomright: 35px;
+-moz-border-radius-bottomleft: 35px;
+border-bottom-right-radius: 35px;
+border-bottom-left-radius: 35px;}
+}
+.h3 {
+text-align: center;
+background:url(http://colourlovers.com.s3.amazonaws.com/images/patterns/3827/3827647.png);
+padding:5px;
+border: 2px dotted #ffffff;
+margin-bottom:5px;
+font-size:19px;
+color:#fff;text-shadow:0px 0px 4px #000000;
+}
+::-moz-selection {
+background:#D4CBF8;
+color:#fff;
+}
+::selection {
+text-shadow: 3px 3px 2px #FFC2C2;
+color:#fff;background:#D4CBF8;
 }
 
-.container > * {
-  background-color: rgb(255,255,255);
-  padding: 1em;
+a.button {
+border:2px solid #EBF5FF;border-radius:10px;
+width:90px;
+text-align:center;
+padding:5px;margin-bottom:10px;
 }
-
-/* Typically, you wouldn't specify a height or min-height on this, instead allowing your actual content (i.e., text, images, etc.) to dictate the height of your content area. But since this example has very minimal content, I've set a min-height to mimic a taller content area. */
-.content {
-  min-height: 40%;
-  overflow-y: scroll;
+/* Comment Start
+----------------------------------------------- */
+#comments h4 {
+margin:10px;text-align:center; color: #444; text-shadow: 1px 1px 1px #B2D5FF; border: 2px dashed #ffffff;font-weight:normal;font:20px short stack;
+-webkit-border-radius: 15px;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;border-radius: 15px;
+box-shadow:0px 0px 4px 4px #DFEEFF;background:#F5FAFF;
 }
-
-/* Layout is stacked vertically by default (for narrower viewports), so give some breathing room between the sections. */
-/* Select all elements where parent is a container */
-.container > * {
-  margin-bottom: 2%;
+@font-face{
+font-family:ttn;
+src:url(http://static.tumblr.com/dep4vzc/82Km8jmz4/tutano_cc_v2.ttf);
 }
-
-/* Now let's apply grid for wider viewports. */
-@media screen and (min-width: 40em) {
-  .container > * {
-    margin-bottom: 0;
+#comments-block {
+width:460px;
+margin:1.5em;
+background:url(http://colourlovers.com.s3.amazonaws.com/images/patterns/3853/3853878.png);
+color:#555555;
+padding:5px;box-shadow:0px 0px 4px 4px #FFF7DD;
+border:2px dashed #ffffff;border-radius:20px;
+}
+#comments-block .comment-author {margin:.5em 0;}
+#comments-block .comment-body {margin:.25em 0 0; background: #ffffff;}
+#comments-block .comment-footer {
+margin:-.25em 0 2em;
+line-height: 1.4em;
+letter-spacing:.1em;
+}
+#comments-block {
+background:url(http://colourlovers.com.s3.amazonaws.com/images/patterns/3853/3853878.png);
+border-radius:30px;
+}
+.comment-body p {
+margin:0 0 .60em;
+padding: 5px 5px 5px 5px;
+background: url(http://i.imgur.com/tDtge.png) repeat top left;
+border-radius: 25px;
+box-shadow:0px 0px 4px 4px #EBF6FF;
+border:2px dashed #ffffff;
+}
+.comment-timestamp {
+margin:1em;
+padding:5px;margin-bottom:2em;
+color:#666;width:200px;
+box-shadow:0px 0px 4px 4px #DFEEFF;background:#F5FAFF;
+border:2px dashed #ffffff;border-radius: 25px;
+}
+.comment-data {
+background:white;
+box-shadow:0px 0px 4px 4px #F9EBFF;
+border:2px dashed #ffffff;border-radius: 25px;
+margin-top:5px !important;margin-bottom:10px !important;
+  padding:3px;width:170px;
+  color:#666;text-align:center;
   }
-  /* Define the grid */
-  .container {
-    display: grid;
-    grid-template-columns: 18% 60% 18%;
-    grid-gap: 2% 2%;
-    grid-template-rows: 10% auto 10%;
-  }
-  /* Place items on the grid */
-  .header {
-    grid-column: 1 / span 3;
-
-  }
-  .sidebar {
-    grid-row-end: span 2;
-  }
-  .content {
-    grid-column: 2;
-  }
-
-.sparkle {
-  position: fixed;
-  z-index: 6;
-  opacity: 0.5;
-  pointer-events: none;
-
+.comment-date {
+background:#ffffff;
+box-shadow:0px 0px 4px 4px #FFF2F2;width:170px;float:right;
+border:2px dashed #ffffff;border-radius: 25px;
+margin-top:5px !important;margin-bottom:10px !important;
+padding:3px;color:#666;
+text-align:center;
 }
+
+.deleted-comment {
+font-style:italic;
+color:#B2B2B2;
+}
+/* Comment Ends
+----------------------------------------------- */
+.haha{
+width:59px;height:40px;
+box-shadow:0px 0px 2px 3px #FFE3E5;
+background:#FFEBED;
+font:10px short stack;
+text-align:center;
+Text-decoration:none;
+color:#888;
+display:inline-block;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+padding-bottom:5px;
+padding-top:20px;padding-left:0px;padding-right:0px;
+display:inline-block;
+-webkit-border-bottom-right-radius: 35px;
+-webkit-border-bottom-left-radius: 35px;
+-moz-border-radius-bottomright: 35px;
+-moz-border-radius-bottomleft: 35px;
+border-bottom-right-radius: 35px;
+border-bottom-left-radius: 35px;
+}
+
+.haha:hover{
+background:#FFFFFF;text-shadow:0px 0px 0px #fff;
+color:#777;height:50px;
+}
+.huhu{
+width:59px;height:40px;
+box-shadow:0px 0px 2px 3px #F1E3FF;
+background:#F7EFFF;
+font:10px short stack;
+text-align:center;
+Text-decoration:none;
+color:#888;
+display:inline-block;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+padding-bottom:5px;
+padding-top:20px;padding-left:0px;padding-right:0px;
+display:inline-block;
+-webkit-border-bottom-right-radius: 35px;
+-webkit-border-bottom-left-radius: 35px;
+-moz-border-radius-bottomright: 35px;
+-moz-border-radius-bottomleft: 35px;
+border-bottom-right-radius: 35px;
+border-bottom-left-radius: 35px;
+}
+.huhu:hover{
+background:#FFFFFF;text-shadow:0px 0px 0px #fff;
+color:#777;height:50px;
+}
+.hehe{
+width:60px;
+padding:8px;
+margin-top:15px;
+box-shadow:2px 2px 4px #DFDFDF;
+background:#eee;
+font:8px short stack;
+text-align:center;
+Text-decoration:none;
+color:#888;
+text-transform:uppercase;
+display:block;
+-webkit-transition:All 0.5s ease;
+-moz-transition:All 0.5s ease;
+-o-transition:All 0.5s ease;
+border-left:0px solid #000;
+-webkit-border-top-right-radius: 33px;
+-webkit-border-bottom-right-radius: 33px;
+-moz-border-radius-topright: 33px;
+-moz-border-radius-bottomright: 33px;
+border-top-right-radius: 33px;
+border-bottom-right-radius: 33px;
+}
+.hehe:hover{
+background:#ffffff;color:#666;
+}
+.cutie {
+background:#ffffff;
+color: #6C6C6C;
+font-size: 11px;position:fixed;
+padding: 10px;
+border:5px solid #EBF5FF;
+border-radius: 25px;
+width: 210px;
+text-align: center;
+}
+.yaya {
+text-align:center;
+font-size:12px;
+border-top:2px dotted #EBF5FF;
+padding:4px;
+}
+#ck{
+border:5px solid #DCE7FF;
+background:#F5F8FF;
+color:#555;
+width:210px;
+height:154px;font-family:candara;
+font-size:13px;
+margin-top:-167px;
+padding-left:0.5px;
+padding-right:0.5px;
+padding-bottom:0.5px;
+padding-top:5px;
+opacity:.0;
 
 
 
