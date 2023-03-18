@@ -1,31 +1,72 @@
-</style></head>
-<body>
+<html >
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <title>Migrant workers in Singapore</title>
+        <script defer type="text/javascript" src="appscripts/main.js">
+        </script>
+        <style>
+            table, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
 
-<table style="margin-top: 15px;margin-bottom: 15px;margin-left:410px;font-size: 13px; color: #444444; line-height: 16px; background:transparent; align="center" border="0" cellspacing="10";>
-<tbody><tr>
-<td valign="top" style="width:520px;border:5px solid #F2F4F2;border-radius: 25px;background:white;padding:10px;box-shadow:0px 0px 20px #ffffff;">
-<div id="page">
+    <body>
 
-<div style="font:45px 'Noticia Text';text-align:center;color:#FFFFBB; text-shadow: 1px 1px 2px #777;font-weight:bold;padding:10px;border-radius:20px;"><span style="color: #FFFC8F;">★ </span><span style="color: #a3e0ff;">M</span><span style="color: #FFBFBF;">a</span><span style="color: #ffcc80;">y's-</span><span style="color: #e0a3ff;">Wo</span><span style="color: #FFBFD0;">rl</span><span style="color: #a3e0ff;">d</span><span style="color: #FFFC8F;"> ★</span></div>
+        <h3 style="font-weight: bold;" align="center">How significant is the migrant worker population in Singapore?</h1>
 
-<b><p style="color: #D76BD9">Project submissions:</b></p>
-<p>Week 9 deliverables:</p>
-<p>Storyboard</p>                            
-<p>Draft project with concepts from week 2-8</p>
-<p>Week 10: Answers to Q1-5</p>
+        <p>The following table showcases the number of foreign workers in Singapore and the type of work passes they carry. While mid-skilled workers and professionals hold an S pass or Employment Pass (EP), low-skilled migrant workers hold a work permit.</p>
+        
+        <table id="myTable" align="center"></table>
 
-<div style="position:fixed; top:40px;left:75px;width:260px;">
-<center><img height="155" src="https://i.pinimg.com/564x/55/3b/9e/553b9e4a89a3c3b7cc1e691da68b1a85.jpg"style="width:200px; height:220px;box-shadow:1px 1px 3px #ddd;border:5px solid #F2F4F2;"/><br>
-<div id="ck">
-<i><p style="color: #D76BD9; font-family: Tahoma">Welcome to May's NM2207 data story project!</i>
-</div><br>
-<br />
+        <p>Calculate the proportion of migrant workers in the foreign workforce each year: </p>
+        <input type="button" id="subtButton" value="Calculate" onclick="wfFunction()"> 
 
-<style>
-  body {
-    background-image: url(http://i.imgur.com/ev8VyQW.png);
-  }
+        <p>Due to declining fertility rates and an ageing population, Singapore's need for migrant workers has instead increased.</p>
+        <div class="grid-container">
+            <div class="grid-box">
+              <p>Declining fertility rates:</p>
+            </div>
+            <div class="grid-box">
+              <p>Ageing population:</p>
+            </div>
+          </div>
 
-</style>
+        <h3 style="font-weight: bold;" align="center">Discrimination faced by migrant workers in Singapore</h3>
+            <p>According to data from the International Labour Organization:</p>
+            <div class="grid-container1">
+                <div class="grid-box1">
+                  <p>Attitudes on equal treatment of migrant workers</p>
+                </div>
+                <div class="grid-box1">
+                  <p>Work entitlements provided to MDW's by surveyed employers</p>
+                </div>
+                <div class="grid-box1">
+                  <p>KAP index by frequency of interaction with migrant workers</p>
+                </div>
+              </div>
+        
+            <h4>Annual reports of reported cases related to migrant workers over the years from NGO's:</h4>
+            <button onclick="showData1()">TWC2</button>
+            <button onclick="showData2()">HOME</button>
 
-</div>
+            <div id="showTWC2" class="data-set">
+            <p>chart</p>
+            </div>
+
+            <div id="showHOME" class="data-set">
+            <p>chart</p>
+            </div>
+
+        <h4>Barriers to healthcare among non-domestic migrant workers</h4>
+        <h4>Psychological distress experienced by non-domestic migrant workers</h4>
+
+    </body>
+
+<footer>
+    Locations of NGO's for support:
+</footer>
+
+
+    
