@@ -1,48 +1,59 @@
 
-html, body {
-  height:100%;
-  width:100%;
-  background-color: rgb(255,255,255);
-  font-family: 'Poppins', sans-serif;
-  color: #1d1d1d;
+main.main--page {
+  margin: 0;
+  background-color: #ffffff;
+  line-height: 1.6;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-left: 150px;
-  margin-right: 150px
-}
-
-.grid-box {
-  background-color: #f2f2f2;
-  padding: 30px;
-}
-
-.grid-container1 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin: 20px;
-}
-
-.grid-box1 {
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.data-set {
-  display: inline-block;
-  width: 50%;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+.datastory-header {
+  margin-top: 40px;
+  margin-bottom: 60px;
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+}
+
+.datastory-title {
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1A451B
+}
+
+.datastory-tagline {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 300;  
+}
+
+.datastory-intro {
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-align: justify;
+}
+
+.datastory-body {
+  max-width: 750px;
+}
+
+.datastory-subtitle {
+  font-size: 1.44rem;
+  border-left: 3px solid var(--highlight);
+  padding-left: 250px;
+  font-weight: 400; 
+}
+
+.datastory-text {
+  font-size: 1.2rem;
+  margin-left: 350px;
+  text-align: 0;
+
+}
+
+.datastory-image {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
