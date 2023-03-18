@@ -1,27 +1,42 @@
 <html >
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
-        <title>Migrant workers in Singapore</title>
-        <script defer type="text/javascript" src="appscripts/main.js">
-        </script>
-        <style>
-            table, td {
-                border: 1px solid black;
-                border-collapse: collapse;
-            }
-        </style>
-    </head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+    <script defer type="text/javascript" src="appscripts/main.js">
+    </script>
+    <style>
+        table, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+  <section class="container datastory-header">
+    <h1 class="datastory-title">
+        Migrant Workers in Singapore
+    </h1>
+    <h2 class="datastory-tagline">
+       Migrant labour in Singapore comprises of foreign domestic workers and workers in the Construction, Marine and Process (CMP) sectors. 
+    </h2>
+  </section>
+  <img src="images/Mworkers.jpg" alt="Migrant workers image">
+  </head>
 
-    <body>
+  <body>
+    <div class="top-right-link">
+      <p><a href="story.pdf"> Storyboard and overview of concepts used</a></p>
 
-        <h3 style="font-weight: bold;" align="center">How significant is the migrant worker population in Singapore?</h1>
-
-        <p>The following table showcases the number of foreign workers in Singapore and the type of work passes they carry. While mid-skilled workers and professionals hold an S pass or Employment Pass (EP), low-skilled migrant workers hold a work permit.</p>
-        
+      <section class="container datastory-body">
+        <h2 class="datastory-subtitle">
+            How significant is the migrant worker population in Singapore?
+        </h2>
+        <p class="datastory-text">
+          The following table showcases the number of foreign workers in Singapore and the type of work passes they carry. 
+          While mid-skilled workers and professionals hold an S pass or Employment Pass (EP), low-skilled migrant workers hold a work permit.
+          Such systemic structures act as obstacles to prevent these migrant workers from settling in Singapore despite their contributions to the nation's economy. 
+        </p>
         <table id="myTable" align="center"></table>
-
-        <p>Calculate the proportion of migrant workers in the foreign workforce each year: </p>
-        <input type="button" id="subtButton" value="Calculate" onclick="wfFunction()"> 
+        <p>Calculate the proportion of migrant workers in the foreign workforce each year:    <input type="button" id="subtButton" value="Calculate" onclick="wfFunction()"></p>
+    </section>
 
         <p>Due to declining fertility rates and an ageing population, Singapore's need for migrant workers has instead increased.</p>
         <div class="grid-container">
