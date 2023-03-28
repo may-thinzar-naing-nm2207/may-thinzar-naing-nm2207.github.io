@@ -1,87 +1,120 @@
 <html >
   <head>
     <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script defer type="text/javascript" src="appscripts/main.js">
     </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         table, td {
-            border: 1px solid black;
+            border: 1px solid rgb(255, 255, 255);
             border-collapse: collapse;
             text-align: center;
         }
     </style>
-  <section class="container datastory-header">
-    <h1 class="datastory-title">
-        Migrant Workers in Singapore
-    </h1>
-    <h2 class="datastory-tagline">
-       Migrant labour in Singapore comprises of foreign domestic workers and workers in the Construction, Marine and Process (CMP) sectors. 
-    </h2>
-  </section>
-  <img src="images/Mworkers.jpg" alt="Migrant workers image">
-  </head>
-
-  <body>
-    <div class="top-right-link">
-      <p><a href="story.pdf"> Storyboard and overview of concepts used</a></p>
-
-      <section class="container datastory-body">
-        <h2 class="datastory-subtitle">
-            How significant is the migrant worker population in Singapore?
-        </h2>
-        <p class="datastory-text">
-          The following table showcases the number of foreign workers in Singapore and the type of work passes they carry. 
-          While mid-skilled workers and professionals hold an S pass or Employment Pass (EP), low-skilled migrant workers hold a work permit.
-          Such systemic structures act as obstacles to prevent these migrant workers from settling in Singapore despite their contributions to the nation's economy. 
-        </p>
-        <table id="myTable" align="center"></table>
-        <p>Calculate the proportion of migrant workers in the foreign workforce each year:    <input type="button" id="subtButton" value="Calculate" onclick="wfFunction()"></p>
-    </section>
-
-        <p>Due to declining fertility rates and an ageing population, Singapore's need for migrant workers has instead increased.</p>
-        <div class="grid-container">
-            <div class="grid-box">
-              <p>Declining fertility rates:</p>
+  <div>
+    <div class="container">
+    </div>
+</div>
+<div>
+    <div class="banner">
+        <div>
+            <img src="02_Foreign-Workers_CS6-3.jpg" width="1500" height="300">
+        </div>
+    </div>
+    <div class="servicos">
+        <div class="text">
+            <h3>A Tale of Irony: Discrimination Against Migrant Workers</h3>
+            <p><a href="story.pdf"> Storyboard</a>
+                <a href="wk9.pdf">Week 9</a>
+                <a href="wk10.pdf">Week 10</a>
+            </p>
+            <div class="box">
+                <p>
+                    While migrant workers have been an integral part of society that has helped in building our economy through their sweat and tears, they have been discriminated against
+                    by Singaporeans, often belitting them for the jobs they perform and avoiding interactions with them. For a multicultural society, how can we do better to protect the interests 
+                    of migrant workers who have left their families behind to dedicate their hard work to us?    
+                </p>
             </div>
-            <div class="grid-box">
-              <p>Ageing population:</p>
-            </div>
-          </div>
 
-        <h3 style="font-weight: bold;" align="center">Discrimination faced by migrant workers in Singapore</h3>
-            <p>According to data from the International Labour Organization:</p>
-            <div class="grid-container1">
-                <div class="grid-box1">
-                  <p>Attitudes on equal treatment of migrant workers</p>
-                </div>
-                <div class="grid-box1">
-                  <p>Work entitlements provided to MDW's by surveyed employers</p>
-                </div>
-                <div class="grid-box1">
-                  <p>KAP index by frequency of interaction with migrant workers</p>
-                </div>
-              </div>
+    <div class="content">
+        <div class="info">
+            <h3>
+                Significance of Migrant Workers</h3>
+            <div>
+              <img width="300px" src="https://cdni.iconscout.com/illustration/premium/thumb/construction-site-2923052-2430702.png">
+            </div>   
+            <div class="story">
+                  <p class="datastory-text">
+                    <p>The following table showcases the number of foreign workers in Singapore and the type of work passes they carry.</p>
+                    <p>While mid-skilled workers and professionals hold an S pass or Employment Pass (EP), low-skilled migrant workers hold a work permit that prevents them from settling down in Singapore.</p>
+                    <table id="myTable" align="center"></table>
+                  <p>Calculate the proportion of migrant workers in the foreign workforce each year:    <input type="button" id="subButton" class= "button" value="Calculate" onclick="wfFunction()"></p>
+            </div>
+            <h3>
+                Need for Migrant Labour
+            </h3>
+            <div class="wild">
+                <p>Migrant labour is required to fill lower-end jobs in the Manufacturing, Marine and Process or construction industries for Singaporeans with higher qualifications to take on higher-paid PMET jobs 
+                  that would help retain Singapore's competitiveness in the economy.</p>
+                <p>Many deem the work they do as 3 D work - dirty, dangerous and demeaning. While such a reason for the need of migrant workers reduces them to mere economic actor and 
+                  is a demeaning perspective, it shows that we are reliant on their labour and should show appreciation towards them.</p>
+                  <div>
+                    <canvas id="myChart" align="center" width="400px" height="400px"></canvas>
+                  </div>
+            </div>
+        </div>
         
-            <h4>Annual reports of reported cases related to migrant workers over the years from NGO's:</h4>
-            <button onclick="showData1()">TWC2</button>
-            <button onclick="showData2()">HOME</button>
-
-            <div id="showTWC2" class="data-set">
-            <p>chart</p>
+        <div class="mapa">
+            <h3>
+                Mistreatment of Migrant Workers</h3>
+            <div>
+                <img width="180px" src="https://media.istockphoto.com/id/1179507984/vector/young-sad-woman-locked-in-a-cage.jpg?s=612x612&w=0&k=20&c=dSRq4T-3kySQJdkcrTZFKEzWhrqxpWSyc1ItsO8BVu0=">
             </div>
-
-            <div id="showHOME" class="data-set">
-            <p>chart</p>
+            <div class="since">
+                <p><h4>People's attitudes towards migrant workers, according to data from the International Labour Organization</h4></p>
+                <div class="flex">
+                    <div>
+                        <canvas id="sm-bar-chart" width="400px" height="400px"></canvas>
+                    </div>
+                    <div>
+                        <canvas id="sm-bar-chart2" width="400px" height="400px"></canvas>
+                    </div>
+                    <div>
+                        <canvas id="my-chart" width="400px" height="400px"></canvas>
+                    </div>
+                    </div>
+                </div>
+                    <div class="readmore">
+                        <br/>
+                        <a class="button2" href="https://www.ilo.org/asia/publications/issue-briefs/WCMS_766633/lang--en/index.htm" target="_blank">
+                            Read more
+                        </a>
+                    </div>
+                <h3>
+                  Issues reported by migrant workers
+                </h3>
+                <p>
+                    The negative sentiments portrayed by Singaporean employees towards migrant workers are evident in their harsh and sometimes abusive behaviour towards them. The fear of losing their jobs and being deployed
+                    to their home countries leaves these workers with no choice but to withstand such treatment. 
+                </p>
+                <p>
+                    Transient Workers Count Too, TWC2, and Humanitarian Organization for Migration Economics, HOME, are two established non-governmental organizations (NGOs) that offer support to migrant workers.
+                    These are the issues that they have dealt with related to migrant workers' mistreatment, that can be found on their respective websites.
+                </p>
+                
+                <div><input type="button" id="twcButton" class= "button2" value="TWC2" onclick="chartTWC"></div>
+                    <canvas id="chartTWC" height="400px"></canvas>
+                <div><input type="button" id="hoButton" class= "button2" value="HOME" onclick="chartHO"></div>
+                    <canvas id="chartHO" height="400px"></canvas>
+                <p>The high numbers of reported cases shows how a significant number of Singaporean employees have failed to
+                    show respect and concern for their employees, and in turn created unsafe working conditions for the migrant workers that are under their care.
+                </p>
+                <div>Barriers to healthcare among non-domestic migrant workers</div>
+                <div>Psychological distress experienced by non-domestic migrant workers</div>
             </div>
-
-        <h4>Barriers to healthcare among non-domestic migrant workers</h4>
-        <h4>Psychological distress experienced by non-domestic migrant workers</h4>
-
-    </body>
-
-<footer>
-    Locations of NGO's for support:
-</footer>
+        </div>
+    </div>
+</div>
 
 
-    
