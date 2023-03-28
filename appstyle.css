@@ -1,59 +1,336 @@
-
-main.main--page {
-  margin: 0;
-  background-color: #ffffff;
-  line-height: 1.6;
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
 }
 
-.datastory-header {
-  margin-top: 40px;
-  margin-bottom: 60px;
-  text-align: center;
+body {
+    font-family: 'Helvetica', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #231c1c;
 }
 
-.datastory-title {
-  font-size: 3rem;
-  font-weight: normal;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  color: #1A451B
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.datastory-tagline {
-  font-size: 1.4rem;
-  font-style: italic;
-  margin-top: 0;
-  margin-bottom: 40px;
-  font-weight: 300;  
+.container div {
+    text-align: center;
+    width: 100%;
 }
 
-.datastory-intro {
-  font-size: 1.4rem;
-  font-weight: normal;
-  text-align: justify;
+.btn,
+a.btn:any-link {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border: 1px solid #555;
+    color: #7b5f5f;
+    font-weight: 600;
 }
 
-.datastory-body {
-  max-width: 750px;
+.btn.btn-primary,
+a.btn.btn-primary {
+    background-color: #FFBE51;
+    border-color: #FFBE51;
+    color: #fff;
 }
 
-.datastory-subtitle {
-  font-size: 1.44rem;
-  border-left: 3px solid var(--highlight);
-  padding-left: 250px;
-  font-weight: 400; 
+.align-row {
+    display: flex;
+    justify-content: space-between;
 }
 
-.datastory-text {
-  font-size: 1.2rem;
-  margin-left: 350px;
-  text-align: 0;
+.logo {
+    width: 80px;
+}
+
+.servicos {
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.servicos div h3 {
+    color: #9F261F;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.servicos div.content {
+    text-align: center;
+}
+
+div.content div.info h3:first-child {
+    color: #F6905D;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+
+div.content div.info h3 {
+    color: #F27133;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    padding: 0px;
+}
+
+.content .info div {
+    text-align: center;
+}
+
+.content .info div.story {
+    /* max-width: 360px; */
+    margin: auto;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.content .info .story p {
+    color: #fff;
+    text-align: left;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content .info .story table {
+    width: 70%;
+}
+
+.content .info .wild {
+    max-width: 400px;
+    margin: auto;
+    color: #fff;
+}
+
+.content .info .wild p {
+    color: #fff;
+    text-align: left
+}
+
+.readmore {
+    text-align: center;
+    margin: auto;
+    margin-top: 36px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 40px;
+}
+
+.button {
+    position: relative;
+    background-color: #16B9DA;
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 4px 2px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+}
+
+.button2 {
+    position: relative;
+    background-color: #e0c1a1;
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 4px 2px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a:any-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #C4918F;
+    display: inline-block;
+    padding: 10px;
+}
+
+.banner {
+    background-color: #FDCC64;
+}
+
+.banner div {
+    text-align: center;
+    width: 100%;
+}
+
+div.banner p {
+    width: 500px;
+    max-width: 100%;
+    font-size: 40px;
+}
+
+div.banner img {
+    max-width: 100%;
+}
+
+
+div.content {
+
+    display: flex;
+}
+
+#myTable {
+    color: white;
+}
+
+
+div.content .info {
+    padding: 0px;
+    width: 50%;
+    height: auto;
+    background-color: #0D6D6D;
+    overflow: auto;
+}
+
+div.content .logo-icon img {
+    width: 50px;
+}
+
+div.content a:any-link,
+div.content p {
+    color: hwb(0 0% 100%);
+}
+
+div.content .mapa {
+    padding: 0px;
+    background-color: #F37133;
+    width: 50%;
+    height: auto;
+    overflow: auto;
 
 }
 
-.datastory-image {
-  margin: 0 auto;
-  display: block;
-  max-width: 100%;
-  height: auto;
+.mapa h3 {
+    color: #219A94;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
 }
+
+.mapa div {
+    text-align: center;
+}
+
+.mapa .since {
+    /* max-width: 360px; */
+    margin: auto;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.mapa .since p {
+    color: #fff;
+    text-align: left;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mapa .readmore {
+    margin: auto;
+    width: 200px;
+    height: 40px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    overflow: auto; 
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+}
+
+.flex div:first-child {
+    margin-right: 5px;
+}
+
+canvas {
+    width: 400px;
+    height: 400px;
+    }
+
+.footer {
+    background-color: #ffff;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    word-spacing: 2px;
+}
+
+.footer div {
+    text-align: center;
+}
+
+.footer hr {
+    height: 1px;
+    border: none;
+    border-top: 1px solid black;
+    width: 70%;
+}
+
+
+.box {
+    width: 700px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 10px 10px 0px #FFA500;
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+/* width */
+.flex::-webkit-scrollbar {
+    width: 15px;
+    height: 2px;
+  }
+  
+  /* Track */
+ .flex::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .flex::-webkit-scrollbar-thumb {
+    background: #0D6D6D; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .flex::-webkit-scrollbar-thumb:hover {
+    background: #0D6D6D; 
+  }
