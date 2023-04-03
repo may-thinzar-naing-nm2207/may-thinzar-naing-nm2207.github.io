@@ -88,12 +88,17 @@ div.content div.info h3 {
 .content .info div.story {
     /* max-width: 360px; */
     margin: auto;
-    color: #fff;
+    color: #000000;
     margin-bottom: 0px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
 .content .info .story p {
-    color: #fff;
+    color: #000000;
     text-align: left;
     width: 70%;
     margin-left: auto;
@@ -105,13 +110,13 @@ div.content div.info h3 {
 }
 
 .content .info .wild {
-    max-width: 400px;
+    max-width: 600px;
     margin: auto;
-    color: #fff;
+    color: #000000;
 }
 
 .content .info .wild p {
-    color: #fff;
+    color: #000000;
     text-align: left
 }
 
@@ -126,7 +131,7 @@ div.content div.info h3 {
 
 .button {
     position: relative;
-    background-color: #16B9DA;
+    background-color: #b4bfd2;
     font-size: 14px;
     padding: 8px 16px;
     margin: 4px 2px;
@@ -142,7 +147,7 @@ div.content div.info h3 {
 
 .button2 {
     position: relative;
-    background-color: #e0c1a1;
+    background-color: #f19b8d;
     font-size: 14px;
     padding: 8px 16px;
     margin: 4px 2px;
@@ -195,20 +200,19 @@ div.banner img {
 
 
 div.content {
-
     display: flex;
 }
 
 #myTable {
-    color: white;
+    color: #082c6c;
 }
 
 
 div.content .info {
     padding: 0px;
-    width: 50%;
+    width: 100%;
     height: auto;
-    background-color: #0D6D6D;
+    background-color: #ffffff;
     overflow: auto;
 }
 
@@ -223,8 +227,8 @@ div.content p {
 
 div.content .mapa {
     padding: 0px;
-    background-color: #F37133;
-    width: 50%;
+    background-color: #FAF2EA;
+    width: 100%;
     height: auto;
     overflow: auto;
 
@@ -242,19 +246,50 @@ div.content .mapa {
     text-align: center;
 }
 
+.mapa {
+    display: flex;
+    flex-direction: column;
+}
+
 .mapa .since {
-    /* max-width: 360px; */
     margin: auto;
-    color: #fff;
+    color: rgb(0, 0, 0);
     margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .mapa .since p {
-    color: #fff;
+    color: #000000;
     text-align: left;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.mapa .since .psych {
+    margin-left: 200px;
+}
+
+.mapa .since .kessler {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa .issues {
+    max-width: 900px;
+    margin: auto;
+    color: #000000;
+}
+
+.mapa .issues p {
+    color: #000000;
+    text-align: center;
 }
 
 .mapa .readmore {
@@ -326,11 +361,22 @@ canvas {
    
   /* Handle */
   .flex::-webkit-scrollbar-thumb {
-    background: #0D6D6D; 
+    background: #082c6c; 
     border-radius: 10px;
   }
   
   /* Handle on hover */
   .flex::-webkit-scrollbar-thumb:hover {
-    background: #0D6D6D; 
+    background: #082c6c; 
+  }
+
+#bangladeshi-workers, #financial-barriers {
+    cursor: pointer;
+}
+
+#knat, #kbar {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
   }
