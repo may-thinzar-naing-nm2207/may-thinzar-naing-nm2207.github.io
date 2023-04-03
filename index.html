@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         table, td {
-            border: 1px solid rgb(255, 255, 255);
+            border: 1px solid rgb(41, 41, 41);
             border-collapse: collapse;
             text-align: center;
         }
@@ -28,6 +28,7 @@
             <p><a href="story.pdf"> Storyboard</a>
                 <a href="wk9.pdf">Week 9</a>
                 <a href="wk10.pdf">Week 10</a>
+                <a href="wk11.pdf">Week 11</a>
             </p>
             <div class="box">
                 <p>
@@ -60,7 +61,7 @@
                 <p>Many deem the work they do as 3 D work - dirty, dangerous and demeaning. While such a reason for the need of migrant workers reduces them to mere economic actor and 
                   is a demeaning perspective, it shows that we are reliant on their labour and should show appreciation towards them.</p>
                   <div>
-                    <canvas id="myChart" align="center" width="400px" height="400px"></canvas>
+                    <canvas id="myChart" width="400px" height="400px"></canvas>
                   </div>
             </div>
         </div>
@@ -83,8 +84,8 @@
                     <div>
                         <canvas id="my-chart" width="400px" height="400px"></canvas>
                     </div>
-                    </div>
                 </div>
+            </div>
                     <div class="readmore">
                         <br/>
                         <a class="button2" href="https://www.ilo.org/asia/publications/issue-briefs/WCMS_766633/lang--en/index.htm" target="_blank">
@@ -94,24 +95,40 @@
                 <h3>
                   Issues reported by migrant workers
                 </h3>
-                <p>
-                    The negative sentiments portrayed by Singaporean employees towards migrant workers are evident in their harsh and sometimes abusive behaviour towards them. The fear of losing their jobs and being deployed
-                    to their home countries leaves these workers with no choice but to withstand such treatment. 
+                <div class="issues">
+                    <p>
+                        The negative sentiments portrayed by Singaporean employees towards migrant workers are evident in their harsh and sometimes abusive behaviour towards them. The fear of losing their jobs and being deployed to their home countries leaves these workers with no choice but to withstand such treatment. 
+                    </p>
+                    <p>
+                        Transient Workers Count Too, TWC2, and Humanitarian Organization for Migration Economics, HOME, are two established non-governmental organizations (NGOs) that offer support to migrant workers. These are the issues that they have dealt with related to migrant workers' mistreatment, that can be found on their respective websites.
+                    </p>
+                    <div>
+                        <input type="button" id="twcButton" class="button2" value="TWC2" onclick="chartTWC()">
+                        <canvas id="chartTWC"></canvas>
+                    </div>
+                    <div>
+                        <input type="button" id="hoButton" class="button2" value="HOME" onclick="chartHO()">
+                        <canvas id="chartHO"></canvas>
+                    </div>
+                    <p>The high numbers of reported cases shows how a significant number of Singaporean employees have failed to show respect and concern for their employees, and in turn created unsafe working conditions for the migrant workers that are under their care.</p>
+                </div>
+
+                <div class="since">
+                    <p><h3>Mental and physical well-being of migrant workers</h3></p>
+                    <p><h4>Psychological distress experienced by non-domestic migrant workers</h4></p>
+                    <div class="psych">
+                        <canvas id="kchart" width="400" height="400"></canvas>
+                    </div>
+                    <div class="kessler">
+                <p> There is a significant 21.9% of the surveyed migrant workers who are reported to have a Kessler-6 score of 13 or greater, indicating a high likelihood
+                    of experiencing severe mental illness. There is an independent association found between <span id="bangladeshi-workers" style="text-decoration: underline; font-weight: bold; color: #b74c4c">Bangladeshi workers</span> or workers with <span id="financial-barriers" style="text-decoration: underline; font-weight: bold; color: #b74c4c">financial barriers</span>,
+                    as represented in the following charts below. This means that Bangadeshi workers or workers with financial burdens are likely to experience psychological distress.
                 </p>
-                <p>
-                    Transient Workers Count Too, TWC2, and Humanitarian Organization for Migration Economics, HOME, are two established non-governmental organizations (NGOs) that offer support to migrant workers.
-                    These are the issues that they have dealt with related to migrant workers' mistreatment, that can be found on their respective websites.
-                </p>
-                
-                <div><input type="button" id="twcButton" class= "button2" value="TWC2" onclick="chartTWC"></div>
-                    <canvas id="chartTWC" height="400px"></canvas>
-                <div><input type="button" id="hoButton" class= "button2" value="HOME" onclick="chartHO"></div>
-                    <canvas id="chartHO" height="400px"></canvas>
-                <p>The high numbers of reported cases shows how a significant number of Singaporean employees have failed to
-                    show respect and concern for their employees, and in turn created unsafe working conditions for the migrant workers that are under their care.
-                </p>
-                <div>Barriers to healthcare among non-domestic migrant workers</div>
-                <div>Psychological distress experienced by non-domestic migrant workers</div>
+                    <canvas id="knat"></canvas>
+                    <canvas id="kbar"></canvas>
+                    </div>
+                    <p><h4>Barriers to healthcare experienced by non-domestic migrant workers</h4></p>
+                </div>
             </div>
         </div>
     </div>
