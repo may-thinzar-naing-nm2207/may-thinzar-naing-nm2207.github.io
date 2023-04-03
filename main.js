@@ -110,13 +110,13 @@ const chart = new Chart("myChart", {
 	options: {
 		legend: {
 			labels: {
-				fontColor: 'white'
+				fontColor: 'black'
 			}
 		},
 		plugins: {
 			legend: {
 				labels: {
-					color: 'white',
+					color: 'black',
 				}
 			},
 		title: {
@@ -142,8 +142,8 @@ const dataObj = {
 			label: "Support for following statements (%)",
 			data: percentage,
 			borderWidth: 1,
-			backgroundColor: "hsla(20,100%,80%,0.8",
-			borderColor: "hsla(0,100%,50%,1)",
+			backgroundColor: "#f19b8d",
+			borderColor: "#bc5a4a",
 
 		}
 	]
@@ -190,8 +190,8 @@ const dataObj2 = {
 			label: "Support for following statements (%)",
 			data: percentageE,
 			borderWidth: 1,
-			backgroundColor: "hsla(20,100%,80%,0.8",
-			borderColor: "hsla(0,100%,50%,1)",
+			backgroundColor: "#f19b8d",
+			borderColor: "#bc5a4a",
 		}
 	]
 };
@@ -225,13 +225,13 @@ const dataKAP = {
 	  {
 		label: "2010",
 		data: [42, 32, 16],
-		borderColor: "green",
+		borderColor: '#b4d2c7',
 		fill: false
 	  },
 	  {
 		label: "2019",
 		data: [39, 23, -6],
-		borderColor: "red",
+		borderColor: '#d2b4bf',
 		fill: false
 	  }
 	]
@@ -268,25 +268,25 @@ const dataTWC = {
 	datasets: [
 		{
 			label: '2020 - Cases handled',
-			backgroundColor: '#993399',
+			backgroundColor: '#9c8eaa',
 			data: [273, 165, 41, 3, 13, 6],
 			stack: 'Stack 0',
 		},
 		{
 			label: '2020 - Cases not handled',
-			backgroundColor: '#b37992',
+			backgroundColor: '#c9b7db',
 			data: [50, 214, 10, 4, 6, 5],
 			stack: 'Stack 0',
 		},
 		{
 			label: '2021 - Cases handled',
-			backgroundColor: '#4974a5',
+			backgroundColor: '#8e8eaa',
 			data: [108, 112, 15, 8, 7, 5],
 			stack: 'Stack 1',
 		},
 		{
 			label: '2021 - Cases not handled',
-			backgroundColor: '#91abc9',
+			backgroundColor: '#b7b7db',
 			data: [149, 61, 16, 2, 14, 1],
 			stack: 'Stack 1',
 		},
@@ -335,25 +335,25 @@ const dataHO = {
 	datasets: [
 		{
 			label: 'Quarter 1',
-			backgroundColor: '#9ec4c4',
+			backgroundColor: '#dbf7db',
 			data: [121, 109, 124, 85, 82, 63, 50, 0, 74, 0, 0, 0, 0, 0],
 			stack: 'Stack 0',
 		},
 		{
 			label: 'Quarter 2',
-			backgroundColor: '#6da7a7',
+			backgroundColor: '#a3c3a3',
 			data: [87, 106, 104, 94, 64, 65, 48, 85, 61, 82, 0, 0, 0, 0],
 			stack: 'Stack 0',
 		},
 		{
 			label: 'Quarter 3',
-			backgroundColor: '#108484',
+			backgroundColor: '#7a927a',
 			data: [176, 122, 109, 96, 104, 77, 75, 82, 0, 60, 41,34, 22, 0],
 			stack: 'Stack 0',
 		},
 		{
 			label: 'Quarter 4',
-			backgroundColor: '#0D6D6D',
+			backgroundColor: '#516151',
 			data: [51, 41, 30, 33, 26, 26, 25, 31, 31, 16, 19, 12, 13, 21],
 			stack: 'Stack 0',
 		},
@@ -392,3 +392,131 @@ new Chart("chartHO", {
 	}
 })
 })
+
+// kessler score bar chart
+const kscore = ["K6 score of 13 or higher", "K6 score of 12 or lower"];
+const percentK = [21.9, 78.1];
+
+const dataK = {
+	labels: kscore,
+	datasets: [
+		{
+			label: "%",
+			data: percentK,
+			backgroundColor: ["#b74c4c",
+							"#4cb7b7"],
+		}
+	]
+};
+new Chart("kchart", { 
+	type: "bar",
+	data: dataK,
+	options: { 
+		responsive: false,
+		maintainAspectRatio: false,
+		indexAxis: 'x',
+		legend: {
+			display: false
+		},
+		plugins: {
+		title: {
+			display: true,
+			text: 'Kessler-6 score of migrant workers',
+				},
+			},
+		}
+	}
+);
+
+// kessler population doughnut chart 
+const nationality = {
+	labels: [
+	  'Bangadeshi',
+	  'Chinese',
+	  'Indian',
+	  'Others'
+	],
+	datasets: [{
+	  label: '%',
+	  data: [82, 9, 10, 0],
+	  backgroundColor: [
+		'#b8b4d2',
+		'#b4bfd2',
+		'#b4ced2',
+		'#d2b4bf'
+	  ],
+	}]
+  };
+
+  new Chart("knat", {
+	type: 'doughnut',
+	data: nationality,
+	options: {
+	elements: {
+		arc: {
+			borderWidth: 0
+			}},
+	plugins: {
+		title: {
+			display: true,
+			text: 'Nationality distribution',
+				},
+			}
+  		}
+  	}
+  )
+
+  // kessler financial barriers doughnut chart
+  const barriers = {
+	labels: [
+		'No',
+		'Yes',
+	],
+	datasets: [{
+	  label: '%',
+	  data: [58, 42],
+	  backgroundColor: [
+		'#b4d2c7',
+		'#d2b4bf',
+	  ],
+	}]
+  };
+
+  new Chart("kbar", {
+	type: 'doughnut',
+	data: barriers,
+	options: {
+	elements: {
+		arc: {
+			borderWidth: 0
+			}},
+	plugins: {
+		title: {
+			display: true,
+			text: 'Reported financial barriers',
+				},
+			}
+  		}
+  	}
+  )
+
+// Get the chart elements
+const knat = document.getElementById("knat");
+const kbar = document.getElementById("kbar");
+
+// Hide the charts initially
+knat.style.display = "none";
+kbar.style.display = "none";
+
+const bangladeshiWorkers = document.getElementById('bangladeshi-workers');
+const financialBarriers = document.getElementById('financial-barriers');
+
+bangladeshiWorkers.addEventListener('click', () => {
+  knat.style.display = knat.style.display === 'none' ? 'block' : 'none';
+  kbar.style.display = 'none';
+});
+
+financialBarriers.addEventListener('click', () => {
+  kbar.style.display = kbar.style.display === 'none' ? 'block' : 'none';
+  knat.style.display = 'none';
+});
