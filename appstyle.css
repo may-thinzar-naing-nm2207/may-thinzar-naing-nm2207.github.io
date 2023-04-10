@@ -150,7 +150,7 @@ div.content div.info h3 {
     background-color: #f19b8d;
     font-size: 14px;
     padding: 8px 16px;
-    margin: 4px 2px;
+    margin-bottom: 10px;
     text-align: center;
     border: none;
     cursor: pointer;
@@ -177,6 +177,10 @@ header nav ul li a:any-link {
     color: #C4918F;
     display: inline-block;
     padding: 10px;
+}
+
+h4 {
+    margin-bottom: 5px
 }
 
 .banner {
@@ -231,7 +235,6 @@ div.content .mapa {
     width: 100%;
     height: auto;
     overflow: auto;
-
 }
 
 .mapa h3 {
@@ -257,8 +260,11 @@ div.content .mapa {
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
+    width: 70%;
+}
+
+.mapa .since .row {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .mapa .since p {
@@ -268,6 +274,11 @@ div.content .mapa {
     margin-left: auto;
     margin-right: auto;
 }
+
+.mapa .since div header {
+    text-align: center;
+}
+
 
 .mapa .since .psych {
     margin-left: 200px;
@@ -282,20 +293,54 @@ div.content .mapa {
 }
 
 .mapa .issues {
-    max-width: 900px;
+    max-width: 700px;
     margin: auto;
     color: #000000;
 }
 
 .mapa .issues p {
     color: #000000;
+    text-align: left;
+}
+
+.mapa .report p {
+    color: #082c6c;
+    font-size: x-large;
+    font-weight: bold;
     text-align: center;
 }
+
+.mapa .issues .report p {
+text-align: center;
+}
+
 
 .mapa .readmore {
     margin: auto;
     width: 200px;
     height: 40px;
+}
+
+
+.hope {
+    padding: 0px 200px;
+    background-color: #f2eafa;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    }
+
+.hope h3 {
+    color: #ffffff;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: left;
+    font-style: italic;
+    }
+
+.hope p {
+    color: #000000;
+    text-align: left;
 }
 
 .flex {
@@ -335,7 +380,6 @@ canvas {
     border-top: 1px solid black;
     width: 70%;
 }
-
 
 .box {
     width: 700px;
@@ -378,5 +422,93 @@ canvas {
     display: block;
     margin: 0 auto;
     width: 400px;
+    max-width: 400px;
     height: 400px;
   }
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f2eafa;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 50px 100px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .slide-img {
+    width: 500px; /* change this to your desired width */
+    height: 300px; /* change this to your desired height */
+    box-shadow: 10px 10px 0px #bbb;
+  }
+
+  .link {
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #faf2ea;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+
+
