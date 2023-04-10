@@ -293,12 +293,18 @@ const dataTWC = {
 	]
 }
 
-// twc2 button 
-const twcButton = document.getElementById("twcButton");
-const chartTWC = document.getElementById("chartTWC");
 
-twcButton.addEventListener("click", function () {
-	chartTWC.style.display = "block";
+// twc2 button 
+const chartTWC = document.getElementById("chartTWC"); //get chart element 
+
+chartTWC.style.display = "none"; //hide chart first 
+
+const twcButton = document.getElementById("twcButton"); //get button element
+
+twcButton.addEventListener('click', () => {
+	chartTWC.style.display = chartTWC.style.display === 'none' ? 'block' : 'none';
+	kbar.style.display = 'none';
+  });
 
 // calling the chart 
 new Chart("chartTWC", {
@@ -324,7 +330,6 @@ new Chart("chartTWC", {
 			}]
 		}
 	}
-})
 })
 
 
@@ -360,13 +365,19 @@ const dataHO = {
 	]
 }
 
-//ho button
-const hoButton = document.getElementById("hoButton");
-const chartHO = document.getElementById("chartHO");
 
-hoButton.addEventListener("click", function () {
-	chartHO.style.display = "block";
+// ho button 
+const chartHO = document.getElementById("chartHO"); //get chart element 
 
+chartHO.style.display = "none"; //hide chart first 
+
+const hoButton = document.getElementById("hoButton"); //get button element
+
+hoButton.addEventListener('click', () => {
+	chartHO.style.display = chartHO.style.display === 'none' ? 'block' : 'none';
+  });
+
+// calling the chart
 new Chart("chartHO", {
 	type: "bar",
 	data: dataHO,
@@ -391,7 +402,7 @@ new Chart("chartHO", {
 		}
 	}
 })
-})
+
 
 // kessler score bar chart
 const kscore = ["K6 score of 13 or higher", "K6 score of 12 or lower"];
@@ -500,11 +511,11 @@ const nationality = {
   	}
   )
 
-// Get the chart elements
+// Get knat and kbar chart elements
 const knat = document.getElementById("knat");
 const kbar = document.getElementById("kbar");
 
-// Hide the charts initially
+// Hide charts first
 knat.style.display = "none";
 kbar.style.display = "none";
 
@@ -520,3 +531,93 @@ financialBarriers.addEventListener('click', () => {
   kbar.style.display = kbar.style.display === 'none' ? 'block' : 'none';
   knat.style.display = 'none';
 });
+
+
+// barriers to healthcare bar chart
+const healthP = {
+	labels: ["Insurance information provided",
+	"Insurance information is in native language",  
+	"Insurance covers inpatient expense", 
+	"Insurance covers outpatient expense",
+	"Daily wages held if on sick/outpatient MC",
+	"Daily wages held if on hospitalisation MC",
+	"Afraid of losing job if sick"],
+	datasets: [
+		{
+			label: 'Yes',
+			backgroundColor: '#ff96ac',
+			data: [15, 32, 37, 27, 27, 25, 23],
+		},
+		{
+			label: 'No',
+			backgroundColor: '#5eb4ef',
+			data: [73, 68, 2, 10, 68, 65, 74],
+		},
+		{
+			label: 'Unsure',
+			backgroundColor: '#ffd777',
+			data: [12, 0, 61, 63, 5, 10, 3],
+		},
+	]
+}
+
+const label = (tooltipItems) => {
+  return tooltipItems.parsed.y + "%";
+};
+
+new Chart("healthCh", {
+	type: "bar",
+	data: healthP,
+	options: {
+		plugins: {
+			title: {
+				display: true, 
+				text: 'Percentage of workers with perceived barriers to healthcare'
+			},
+      tooltip: {
+        callbacks: {
+        	label: label,
+        }
+      }
+		},
+		responsive: true,
+		interaction: {
+			intersect: false,
+		},
+		scales: {
+			xAxes: [{
+				stacked: false,
+			}],
+			yAxes: [{
+				stacked: true,
+			}]
+		}
+	}
+})
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
