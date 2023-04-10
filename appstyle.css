@@ -445,7 +445,8 @@ canvas {
   .slide-img {
     width: 500px; /* change this to your desired width */
     height: 300px; /* change this to your desired height */
-    box-shadow: 10px 10px 0px #bbb;
+    border: 3px solid #717171;
+    box-shadow: 8px 8px 0px #717171;
   }
 
   .link {
