@@ -2,6 +2,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="css/appstyle.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-geo"></script>
     <script defer type="text/javascript" src="appscripts/main.js">
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -72,8 +73,8 @@
             <div>
                 <img width="180px" src="https://media.istockphoto.com/id/1179507984/vector/young-sad-woman-locked-in-a-cage.jpg?s=612x612&w=0&k=20&c=dSRq4T-3kySQJdkcrTZFKEzWhrqxpWSyc1ItsO8BVu0=">
             </div>
-            <div class="since">
                 <p><h4>People's attitudes towards migrant workers, according to data from the International Labour Organization</h4></p>
+            <div class="since">
                 <div class="flex">
                     <div>
                         <canvas id="sm-bar-chart" width="400px" height="400px"></canvas>
@@ -85,13 +86,12 @@
                         <canvas id="my-chart" width="400px" height="400px"></canvas>
                     </div>
                 </div>
-            </div>
-                    <div class="readmore">
-                        <br/>
-                        <a class="button2" href="https://www.ilo.org/asia/publications/issue-briefs/WCMS_766633/lang--en/index.htm" target="_blank">
-                            Read more
-                        </a>
-                    </div>
+                <div class="readmore">
+                    <br/>
+                    <a class="button2" href="https://www.ilo.org/asia/publications/issue-briefs/WCMS_766633/lang--en/index.htm" target="_blank">
+                        Read more
+                    </a>
+                </div>
                 <h3>
                   Issues reported by migrant workers
                 </h3>
@@ -104,34 +104,110 @@
                     </p>
                     <div>
                         <input type="button" id="twcButton" class="button2" value="TWC2" onclick="chartTWC()">
-                        <canvas id="chartTWC"></canvas>
+                        <canvas id="chartTWC" height="500px"></canvas>
                     </div>
                     <div>
                         <input type="button" id="hoButton" class="button2" value="HOME" onclick="chartHO()">
-                        <canvas id="chartHO"></canvas>
+                        <canvas id="chartHO" height="500px"></canvas>
                     </div>
-                    <p>The high numbers of reported cases shows how a significant number of Singaporean employees have failed to show respect and concern for their employees, and in turn created unsafe working conditions for the migrant workers that are under their care.</p>
+                    <div class="report">
+                    <p>The high numbers of reported cases show how a significant number of Singaporean employees have failed to show respect and concern for their employees, and in turn created unsafe working conditions for the migrant workers that are under their care.</p>
+                    </div>
                 </div>
-
-                <div class="since">
                     <p><h3>Mental and physical well-being of migrant workers</h3></p>
+                        <p>
+                            There has been a large-scale <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5435267/" target="_blank">survey</a> done on non-domestic migrant workers to assess their barriers to healthcare and their mental health.
+                        </p>
                     <p><h4>Psychological distress experienced by non-domestic migrant workers</h4></p>
+                    <div class="row">
                     <div class="psych">
                         <canvas id="kchart" width="400" height="400"></canvas>
                     </div>
                     <div class="kessler">
-                <p> There is a significant 21.9% of the surveyed migrant workers who are reported to have a Kessler-6 score of 13 or greater, indicating a high likelihood
-                    of experiencing severe mental illness. There is an independent association found between <span id="bangladeshi-workers" style="text-decoration: underline; font-weight: bold; color: #b74c4c">Bangladeshi workers</span> or workers with <span id="financial-barriers" style="text-decoration: underline; font-weight: bold; color: #b74c4c">financial barriers</span>,
-                    as represented in the following charts below. This means that Bangadeshi workers or workers with financial burdens are likely to experience psychological distress.
-                </p>
-                    <canvas id="knat"></canvas>
-                    <canvas id="kbar"></canvas>
+                    <p> There is a significant 21.9% of the surveyed migrant workers who are reported to have a Kessler-6 score of 13 or greater, indicating a high likelihood
+                        of experiencing severe mental illness. There is an independent association found between <span id="bangladeshi-workers" style="text-decoration: underline; font-weight: bold; color: #b74c4c">Bangladeshi workers</span> or workers with <span id="financial-barriers" style="text-decoration: underline; font-weight: bold; color: #b74c4c">financial barriers</span>,
+                        as represented in the following charts below. This means that Bangadeshi workers or workers with financial burdens are likely to experience psychological distress.
+                    </p>
+                        <canvas id="knat"></canvas>
+                        <canvas id="kbar"></canvas>
+                    </div>
                     </div>
                     <p><h4>Barriers to healthcare experienced by non-domestic migrant workers</h4></p>
-                </div>
+                    <p>
+                        According to the same study, there is little access to information about insurance policies for these workers, particularly because the information is
+                        not provided in their native language, making it difficult for them to understand. Furthermore, they are unsure if insurance could cover their inpatient and outpatient expenses. 
+                        This could prevent them from seeking healthcare when needed. Another reason is because they are afraid that their salary will be on hold even if they
+                        are deemed unfit for work through a Medical Certificate (MC), or that they might even lose their jobs. These perceptions could ultimately result in them neglecting
+                        their health.
+                    </p>
+                    <canvas id="healthCh" height="200"></canvas>
             </div>
         </div>
+                <div class="hope">
+                    <h3>
+                        But...
+                    </h3>
+                    <p>
+                        Not all hope is lost! There are more non-profit organisations and volunteering groups being set up to support migrant workers with
+                        necessities and bridge the gap between Singaporeans and migrant workers. It is thus crucial to speak up on the difficulties encountered by
+                        these workers to foster empathy and garner support for this important group of people. 
+                    </p>
+                </div>
     </div>
 </div>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <q>Volunteer groups keep up support for migrant workers in Singapore.</q>
+  <p class="link"><a href="https://www.straitstimes.com/singapore/volunteer-groups-keep-up-support-for-migrant-workers-in-singapore" target="_blank">The Straits Times</a></p>
+  <img src="image1.jpg" alt="Image 1" class="slide-img">
+</div>
+
+<div class="mySlides">
+  <q>Singapore's first large scale dental screening and health education fair for migrant workers attracted 400 workers.</q>
+  <p class="link"><a href="https://www.healthserve.org.sg/singapores-first-large-scale-dental-screening-and-health-education-fair-for-migrant-workers-attracted-400-workers/" target="_blank">HealthServe</a></p>
+  <img src="image2.jpg" alt="Image 2" class="slide-img">
+</div>
+
+<div class="mySlides">
+  <q>Volunteering with migrant workers teaches him about the true spirit of giving.</q>
+  <p class="link"><a href="https://pride.kindness.sg/volunteering-with-migrant-workers/" target="_blank">The Pride</a></p>
+  <img src="image3.jpg" alt="Image 3" class="slide-img">
+</div>
+
+<div class="mySlides">
+    <q>10,000 migrant workers get Christmas gifts in charity initiative.</q>
+    <p class="link"><a href="https://www.channelnewsasia.com/singapore/itsrainingraincoats-migrant-worker-welfare-group-charity-christmas-drive-2022-wrap-party-volunteers-3150116" target="_blank">Channel NewsAsia</a></p>
+    <img src="image4.jpg" alt="Image 4" class="slide-img">  
+</div>
+
+  <div class="mySlides">
+    <q>...even though we could only converse with them in short sentences, it felt like we gave them a voice—and the only thing I needed to do was to be willing to listen.</q>
+    <p class="link"><a href="https://www.citynews.sg/2022/12/15/serving-migrant-workers-for-a-day-one-volunteers-story/" target="_blank">City News, City Harvest Church</a></p>
+    <img src="image5.jpg" alt="Image 5" class="slide-img"> 
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<footer class="footer">
+    <hr>
+    <div>
+      <p>Here's how you can help too:</p>
+      <p><a href="https://www.giving.sg/organisation/mwcsg" target="_blank">Donate or volunteer now.</a></p>
+    </div>
+  </footer>
 
 
