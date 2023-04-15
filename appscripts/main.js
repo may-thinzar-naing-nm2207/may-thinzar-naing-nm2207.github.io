@@ -20,7 +20,7 @@ for (var i = 0; i < 7; i++) { //create 7 header cells
 	headerCell.innerHTML = headers[i]; //set inner html of the th element to corresponding value from headers array 
 	headerRow.appendChild(headerCell); //append th element to headerRow
 }
-table.appendChild(headerRow); //append th element to t
+table.appendChild(headerRow); //append th element to table
 
 // Create the data rows
 for (var i = 0; i < 7; i++) { //create 7 rows 
