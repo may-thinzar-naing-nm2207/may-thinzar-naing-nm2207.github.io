@@ -1,0 +1,468 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif; 
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    padding: 0; /*no space b/w content of element and border*/
+    margin: 0; /*no space b/w element and browser edge*/
+    color: #231c1c;
+}
+
+.container {
+    margin: 0 auto; /*top and bottom margin 0, left and right margin auto (centered horizontally within parent container)*/
+    display: flex; /*flex container*/
+    justify-content: space-between; /*align elements along main axis*/
+    align-items: center; /*align elements along cross axis; vertically at center of container*/
+}
+
+.container div {
+    text-align: center; 
+    width: 100%; /*to take up 100% of page space*/
+}
+
+
+.servicos {
+    background-color: #fff;
+    text-align: center; /*center text of element thats a child of servicos class*/
+    width: 100%;
+}
+
+.servicos div h3 { /*set attributes of h3 elements in servicos*/
+    color: #9F261F;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.servicos div.content {
+    text-align: center; /*center text of all elements under servicos class*/
+}
+
+div.content div.info h3:first-child { /*for the 1st h3 element inside div class info thats inside div class content */
+    color: #F6905D;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+
+div.content div.info h3 { /*for all h3 elements inside div class info thats inside div class content*/
+    color: #F27133;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    padding: 0px;
+}
+
+.content .info div {
+    text-align: center;
+}
+
+.content .info div.story {
+    margin: auto;
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /*elements to be arranged vertically in a column layout*/
+}
+
+.content .info .story p {
+    color: #000000;
+    text-align: left;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content .info .story table {
+    width: 70%;
+}
+
+.content .info .wild {
+    max-width: 600px;
+    margin: auto;
+    color: #000000;
+}
+
+.content .info .wild p {
+    color: #000000;
+    text-align: left
+}
+
+.readmore {
+    text-align: center;
+    margin: auto;
+    margin-top: 36px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 40px;
+}
+
+.button { /*specifying attributes for button*/
+    position: relative; /*positioned relative to original position on page*/
+    background-color: #b4bfd2;
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 4px 2px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.button2 { 
+    position: relative;
+    background-color: #f19b8d;
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul { /*for unordered list element*/
+    list-style: none; /*remove bullet points from list items*/
+}
+
+header nav ul li { /*for list elements thats a child of ul element*/
+    display: inline-block; /*positioned horizontally with padding*/
+}
+
+header nav ul li a:any-link { /*anchor element thats a child of the li element*/
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #C4918F;
+    display: inline-block;
+    padding: 10px;
+}
+
+h4 {
+    margin-bottom: 5px
+}
+
+
+div.banner img {
+    max-width: 100%; /*banner image to take up 100% of page max*/
+}
+
+
+div.content {
+    display: flex;
+}
+
+#myTable {
+    color: #082c6c;
+}
+
+
+div.content .info { /*attributes for div class info thats under content*/
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+div.content .logo-icon img {
+    width: 50px; /*size of icon in div class content*/
+}
+
+div.content a:any-link, /*select anchor element under div class content*/
+div.content p { /* select paragraph element under div class content*/
+    color: hwb(0 0% 100%);
+}
+
+div.content .mapa { /*attributes for div class mapa inside div class content*/
+    padding: 0px;
+    background-color: #FAF2EA;
+    width: 100%;
+    height: auto;
+    overflow: auto; /*scroll bar if content inside the div element is larger than container*/
+}
+
+.mapa h3 { /*attributes for mapa h3 element*/
+    color: #219A94;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+
+.mapa div { /*for all div elements inside div class mapa*/
+    text-align: center;
+}
+
+.mapa { /*setting flex layout for mapa*/
+    display: flex;
+    flex-direction: column;
+}
+
+.mapa .since {
+    margin: auto;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.mapa .since .row {
+    display: flex;
+}
+
+.mapa .since p {
+    color: #000000;
+    text-align: left;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mapa .since div header {
+    text-align: center;
+}
+
+
+.mapa .since .psych {
+    margin-left: 200px;
+}
+
+.mapa .since .kessler {
+    width: 50%;
+    display: flex; /*flex container*/
+    flex-direction: column; /*vertical arrangement of items in the flex layout*/
+    justify-content: center; /*align items vertically in center of container*/
+    align-items: center; /*align items horizontally in center of container*/
+}
+
+.mapa .issues {
+    width: 70%;
+    margin: auto;
+    color: #000000;
+}
+
+.mapa .issues p {
+    color: #000000;
+    text-align: left;
+}
+
+.mapa .report p {
+    color: #082c6c;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.mapa .readmore {
+    margin: auto;
+    width: 200px;
+    height: 40px;
+}
+
+
+.hope { /*setting attributes for div class hope*/
+    padding: 0px 200px;
+    background-color: #f2eafa;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    }
+
+.content .hope h3 { /*setting attributes for h3 element of div class hope under div class content*/
+    color: #f27133;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: left;
+    font-style: italic;
+    }
+
+.hope p { /*left-aligning and setting colour for text in div class hope*/
+    color: #000000;
+    text-align: left;
+}
+
+.flex { /*setting attributes for div class flex*/
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    overflow: auto; 
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+}
+
+.flex div:first-child { /*setting margin for first child element inside div class flex*/
+    margin-right: 5px;
+}
+
+canvas { /*setting size for elements with div id canvas*/
+    width: 400px;
+    height: 400px;
+    }
+
+.footer { /*setting attributes for footer*/
+    background-color: #ffff;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    word-spacing: 2px;
+}
+
+.footer div { /*centering text for div element under footer*/
+    text-align: center;
+}
+
+.footer hr { /*attributes for hr element under footer*/
+    height: 1px;
+    border: none;
+    border-top: 1px solid black;
+    width: 70%;
+}
+
+.box { /*setting attributes for box that contains the intro to the data story*/
+    width: 700px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 10px 10px 0px #FFA500;
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+/*for scrollbar in people's attitudes towards migrant workers*/
+/* width */
+.flex::-webkit-scrollbar {
+    width: 15px;
+    height: 2px;
+  }
+  
+  /* Track */
+ .flex::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .flex::-webkit-scrollbar-thumb {
+    background: #082c6c; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .flex::-webkit-scrollbar-thumb:hover {
+    background: #082c6c; 
+  }
+
+/*cursor to change to pointer when hovering above these words*/
+#bangladeshi-workers, #financial-barriers {
+    cursor: pointer;
+}
+
+/*setting attributes for charts that'll appear when above 2 phrases are clicked*/
+#knat, #kbar {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    max-width: 400px;
+    height: 400px;
+  }
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f2eafa;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 50px 150px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .slide-img {
+    width: 500px;
+    height: 300px; 
+    border: 3px solid #717171;
+    box-shadow: 8px 8px 0px #717171;
+  }
+
+  .link {
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer; /* change mouse cursor to pointer*/
+    position: absolute; /* positiond relative to parent container*/
+    top: 50%; /*top of buttons to be positioned 50% of parent container */
+    transform: translateY(-50%); /*centers buttons vertically*/
+    width: auto; 
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    border-radius: 0 3px 3px 0; /*rounded edge on right side of buttons*/
+    user-select: none; /*prevents users from selecting buttons*/
+    font-size: 40px; /*enlarge arrow size*/
+  }
+  
+  .prev {
+    left: 10px;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute; 
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* dot container */
+  .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #faf2ea;
+  }
+  
+  /* dots */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; /* transition to new colour in 0.6s through ease animation */
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+
+
