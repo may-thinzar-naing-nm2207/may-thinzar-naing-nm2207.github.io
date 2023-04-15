@@ -53,7 +53,7 @@
                     <p>The following table showcases the number of foreign workers in Singapore and the type of work passes they carry.</p>
                     <p>While mid-skilled workers and professionals hold an S pass or Employment Pass (EP), low-skilled migrant workers hold a work permit that prevents them from settling down in Singapore.</p>
                     <table id="myTable" align="center"></table>
-                  <p>Calculate the proportion of migrant workers in the foreign workforce each year:    <input type="button" id="subButton" class= "button" value="Calculate" onclick="wfFunction()"></p>
+                  <p>Calculate the proportion of migrant workers in the foreign workforce each year:    <input type="button" id="subButton" class= "button" value="Calculate"></p>
             </div>
             <h3>
                 Need for Migrant Labour
@@ -79,15 +79,23 @@
             <div class="since">
                 <div class="flex">
                     <div>
-                        <canvas id="sm-bar-chart" width="400px" height="400px"></canvas>
+                        <canvas id="sm-bar-chart"></canvas>
                     </div>
                     <div>
-                        <canvas id="sm-bar-chart2" width="400px" height="400px"></canvas>
+                        <canvas id="sm-bar-chart2"></canvas>
                     </div>
                     <div>
-                        <canvas id="my-chart" width="400px" height="400px"></canvas>
+                        <canvas id="my-chart"></canvas>
                     </div>
                 </div>
+                <p>
+                   These charts show that a large proportion of Singaporean employers feel unsympathetic towards the exploitation of migrant workers.
+                   While they agree on providing a day off and paid leave for migrant workers, they are more reluctant to let migrant workers
+                   keep their passport, provide overtime pay or maternity leave. The KAP index shows a <b>22%</b> decrease in the frequency of
+                   interactions. These statistics show the rights that these workers are denied of, and the lack of understanding and connection that exists
+                    in these employer-employee relationships. 
+                </p>
+                <img src="worker.jpg" width="400px" height="200px">
                 <div class="readmore">
                     <br/>
                     <a class="button2" href="https://www.ilo.org/asia/publications/issue-briefs/WCMS_766633/lang--en/index.htm" target="_blank">
@@ -105,7 +113,7 @@
                         Transient Workers Count Too, TWC2, and Humanitarian Organization for Migration Economics, HOME, are two established non-governmental organizations (NGOs) that offer support to migrant workers. These are the issues that they have dealt with related to migrant workers' mistreatment, that can be found on their respective websites.
                     </p>
                     <div>
-                        <input type="button" id="twcButton" class="button2" value="TWC2" onclick="chartTWC()">
+                        <input type="button" id="twcButton" class="button2" value="TWC2" onclick="chartTWC()"> <!--js function chartTWC to be called when button is clicked-->
                         <canvas id="chartTWC" height="500px"></canvas>
                     </div>
                     <div>
@@ -114,6 +122,7 @@
                     </div>
                     <div class="report">
                     <p>The high numbers of reported cases show how a significant number of Singaporean employees have failed to show respect and concern for their employees, and in turn created unsafe working conditions for the migrant workers that are under their care.</p>
+                    <img src="migrant.jpg" width="400px" height="200px">
                     </div>
                 </div>
                     <p><h3>Mental and physical well-being of migrant workers</h3></p>
@@ -191,12 +200,14 @@
     <img src="image5.jpg" alt="Image 5" class="slide-img"> 
 </div>
 
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
+<!--calling js function plusSlides that correspondings to the arrow user has clicked, passes argument 1 if next arrow is clicked and -1 if prev arrow is clicked-->
+<a class="prev" onclick="plusSlides(-1)">❮</a> 
+<a class="next" onclick="plusSlides(1)">❯</a> 
 
 </div>
 
 <div class="dot-container">
+<!--calling js function currentSlide with argument that corresponds to the slide number user is on-->
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
